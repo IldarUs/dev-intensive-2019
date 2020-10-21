@@ -19,7 +19,7 @@ data class User (
         lastName = lastName,
         avatar = null
     )
-    constructor(id: String) : this(id = id, "Joe", "Doe $id")
+    constructor(id: String) : this(id = id, firstName = "Joe", lastName = "Doe $id")
 
     companion object Factory {
         private var lastId:Int = -1
